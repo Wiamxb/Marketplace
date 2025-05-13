@@ -2,13 +2,30 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Marketplace</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Marktplaats</title>
+  <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  <h1>Marketplace</h1>
-  <div id="product-list"></div>
-  <script src="main.js" defer></script>
+  <nav>
+    <button>Alles</button>
+    <button>Schoonheid</button>
+    <button>Parfums</button>
+    <button>Meubels</button>
+    <button>Boodschappen</button>
+    <button id="toon-favorieten">Favorieten (0)</button>
+    <button id="toon-winkelmand">Winkelmandje (0)</button>
+  </nav>
+
+  <h1>Marktplaats</h1>
+
+  <div class="zoek-container">
+    <input type="text" id="zoek" placeholder="Zoek producten...">
+  </div>
+
+  <div id="product-lijst"></div>
+
+  <script src="src/main.js" defer></script>
 </body>
 </html>
+
 
