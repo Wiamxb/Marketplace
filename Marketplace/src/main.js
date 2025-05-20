@@ -85,6 +85,39 @@ function updateCartCount() {
   showCartButton.textContent = `Winkelmandje (${cart.length})`;
 }
 
+/*Winkelmand renderen en producten laten verwijderen*/
+function renderCart() {
+  cartContainer.innerHTML = '';
+  if (cart.length === 0) {
+    cartContainer.innerHTML = '<p>Je winkelmand is leeg.</p>';
+    return;
+  }
+
+  cart.forEach(product => {
+    const item = document.createElement('div');
+    item.classList.add('cart-item');
+    item.innerHTML = `
+      <img src="${product.thumbnail}" alt="${product.title}" />
+      <div class="cart-item-details">
+        <h3>${product.title}</h3>
+        <p>💰 ${product.price} €</p>
+      </div>
+      <button class="remove-cart-btn" data-id="${product.id}">✖</button>
+    `;
+    cartContainer.appendChild(item);
+  });
+
+  document.querySelectorAll('.remove-cart-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = parseInt(btn.dataset.id);
+      cart = cart.filter(item => item.id !== id);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+      updateCartCount();
+      renderProducts(allProducts);
+    });
+  });
+}
 
 
 
