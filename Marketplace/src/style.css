@@ -245,6 +245,27 @@ nav button:hover {
   background-color: #e60000;
 }
 
+/*Mobiele weergave*/
+@media (max-width: 768px) {
+  #product-list {
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 180px;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 
 
 
