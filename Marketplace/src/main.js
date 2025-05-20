@@ -117,7 +117,17 @@ function renderCart() {
       renderProducts(allProducts);
     });
   });
+}  
+/*producten landen*/
+async function init() {
+  allProducts = await fetchProducts();
+  renderProducts(allProducts);
+  updateCartCount();
+  updateFavoritesCount();
 }
+
+init();
+
 
 
 
