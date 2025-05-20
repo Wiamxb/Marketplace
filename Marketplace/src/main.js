@@ -148,6 +148,12 @@ document.querySelectorAll('.filter-button').forEach(button => {
   });
 });
 
+/* Alleen favorieten tonen*/
+document.getElementById('show-favorites').addEventListener('click', () => {
+  const favProducts = allProducts.filter(p => favourites.includes(p.id));
+  renderProducts(favProducts);
+});
+
 
 
 
