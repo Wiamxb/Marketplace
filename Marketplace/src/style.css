@@ -109,4 +109,22 @@ nav button:hover {
   margin: 10px 0;
 }
 
+/*Productkaart-knoppen*/
+.product-card button {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #8e44ad;
+}
+
 
