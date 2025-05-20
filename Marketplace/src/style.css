@@ -148,4 +148,14 @@ nav button:hover {
   outline: none;
 }
 
+/*Laadtekst*/
+#loading {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+
 
