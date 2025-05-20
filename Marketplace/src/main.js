@@ -76,3 +76,15 @@ function initCartButtons() {
   });
 }
 
+/*Aantal favorieten en producten*/
+function updateFavoritesCount() {
+  document.getElementById('favorites-count').textContent = favourites.length;
+}
+
+function updateCartCount() {
+  showCartButton.textContent = `Winkelmandje (${cart.length})`;
+}
+
+
+
+
