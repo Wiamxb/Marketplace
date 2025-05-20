@@ -128,6 +128,16 @@ async function init() {
 
 init();
 
+/*zoekfunctionaliteit*/
+searchInput.addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase();
+  const filtered = allProducts.filter(p =>
+    p.title.toLowerCase().includes(query)
+  );
+  renderProducts(filtered);
+});
+
+
 
 
 
