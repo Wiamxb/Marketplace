@@ -154,6 +154,16 @@ document.getElementById('show-favorites').addEventListener('click', () => {
   renderProducts(favProducts);
 });
 
+/*Winkelmandje verbergen/tonen"*/
+showCartButton.addEventListener('click', () => {
+  const cartPage = document.getElementById('cart-page');
+  cartPage.classList.toggle('hidden');
+  renderCart();
+});
+
+
+
+
 
 
 
