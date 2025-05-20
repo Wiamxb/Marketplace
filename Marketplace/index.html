@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Marktplaats</title>
-  <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-  <nav>
-    <button class="filter-knop" data-filter="all">Alles</button>
-    <button class="filter-knop" data-filter="beauty" >Schoonheid</button>
-    <button class="filter-knop" data-filter="fragrances">Parfums</button>
-    <button class="filter-knop" data-filter="furniture">Meubels</button>
-    <button class="filter-knop" data-filter="groceries">Boodschappen</button>
-    <button id="toon-favorieten">Favorieten (0)</button>
-    <button id="toon-winkelmand">Winkelmandje (0)</button>
-  </nav>
-  <div id="product-lijst"></div>
-
-
-  <h1>Marktplaats</h1>
-
-  <div class="zoek-container">
-    <input type="text" id="zoek" placeholder="Zoek producten...">
-  </div>
-
-  <div id="product-lijst"></div>
-
-  <script src="src/main.js" defer></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="filter-button" data-filter="all">Alles</button>
+      <button class="filter-button" data-filter="beauty">Schoonheid</button>
+      <button class="filter-button" data-filter="fragrances">Parfums</button>
+      <button class="filter-button" data-filter="furniture">Meubels</button>
+      <button class="filter-button" data-filter="groceries">Boodschappen</button>
+      <button id="show-favorites">Favorieten (<span id="favorites-count">0</span>)</button>
+      <button id="show-cart">Winkelmandje (0)</button>
+    </nav> 
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
-
 
