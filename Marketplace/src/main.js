@@ -136,7 +136,17 @@ searchInput.addEventListener('input', (e) => {
   );
   renderProducts(filtered);
 });
-
+ 
+/*Producten filteren per categorie*/ 
+document.querySelectorAll('.filter-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.dataset.filter;
+    const filtered = category === 'all'
+      ? allProducts
+      : allProducts.filter(p => p.category === category);
+    renderProducts(filtered);
+  });
+});
 
 
 
