@@ -28,6 +28,7 @@ function renderProducts(products) {
     card.innerHTML = `
       <img src="${product.thumbnail}" alt="${product.title}" />
       <h3>${product.title}</h3>
+      <p>${product.description}</p>
       <p>💰 ${product.price} €</p>
       <p>${product.category}</p>
       <div class="product-actions">
