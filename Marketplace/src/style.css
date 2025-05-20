@@ -60,4 +60,53 @@ nav button:hover {
   max-width: 600px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/*Productlijst en kaarten*/ 
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #888;
+  margin: 10px 0;
+}
+
 
