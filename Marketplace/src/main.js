@@ -42,3 +42,37 @@ function renderProducts(products) {
   initCartButtons();
 }
 
+/*code: favoriete producten*/
+function initFavButtons() {
+  document.querySelectorAll('.fav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = parseInt(btn.dataset.id);
+      if (favourites.includes(id)) {
+        favourites = favourites.filter(fid => fid !== id);
+      } else {
+        favourites.push(id);
+      }
+      localStorage.setItem('favourites', JSON.stringify(favourites));
+      updateFavoritesCount();
+      renderProducts(allProducts);
+    });
+  });
+}
+/*code: winkelmand*/
+function initCartButtons() {
+  document.querySelectorAll('.cart-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = parseInt(btn.dataset.id);
+      const product = allProducts.find(p => p.id === id);
+      if (!cart.some(item => item.id === id)) {
+        cart.push(product);
+      } else {
+        cart = cart.filter(item => item.id !== id);
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+      renderProducts(allProducts);
+    });
+  });
+}
+
