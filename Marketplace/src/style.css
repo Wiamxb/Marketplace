@@ -157,5 +157,44 @@ nav button:hover {
   font-weight: bold;
 }
 
+/*Winkelmand*/
+.hidden {
+  display: none;
+}
+
+#cart-page {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 500px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+}
+
+#cart-page.hidden {
+  display: none;
+}
+
+#cart-page h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
 
 
