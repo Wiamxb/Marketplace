@@ -30,6 +30,8 @@ function renderProducts(products) {
       <h3>${product.title}</h3>
       <p>${product.description}</p>
       <p>💰 ${product.price} €</p>
+       <p>⭐ ${product.rating}</p>
+       <p>Merk: ${product.brand}</p>
       <p>${product.category}</p>
       <div class="product-actions">
         <button class="fav-btn" data-id="${product.id}">${isFav ? '❤️' : '🤍'}</button>
