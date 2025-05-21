@@ -38,6 +38,13 @@ Functionele vereisten:
    - Volledig responsive design: de layout past zich automatisch aan verschillende schermformaten aan: desktop, tablet én mobiel. Hierdoor blijft de interface overzichtelijk en bruikbaar op elk toestel.
    - Gebruiksvriendelijke navigatie: dankzij een duidelijke structuur en navigatie kunnen gebruikers vlot door de applicatie bladeren. Belangrijke onderdelen zoals de productlijst, winkelmandje en favorieten zijn gemakkelijk bereikbaar via knoppen of een navigatiebalk.
    - Visueel aantrekkelijke lay-out: de applicatie maakt gebruik van een modern ontwerp met afgeronde hoeken, zachte schaduwen en consistente witruimtes. De stijl wordt versterkt door het gebruik van paarse knoppen.
+  
+Gebruikte API's: 
+- DummyJSON API: Deze API werd gratis gevonden via GitHub. Een API met dummy data over producten. 
+https://dummyjson.com/docs/products
+
+
+
 
 
 
