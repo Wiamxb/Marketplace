@@ -34,6 +34,11 @@ Functionele vereisten:
    - Winkelmandje: producten kunnen worden toegevoegd aan het winkelmandje. Gebruikers kunnen met een aparte knop het winkelmandoverzicht openen om hun geselecteerde aankopen te bekijken. Elke productkaart in het winkelmandje bevat een verwijderknop, waarmee gebruikers eenvoudig producten uit hun mandje kunnen verwijderen. Ook het winkelmandje blijft behouden tussen sessies dankzij localStorage.
    - Beoordelingen: gebruikers kunnen bij elk product de beoordeling (rating) bekijken, zodat ze beter kunnen inschatten of het product aan hun verwachtingen zal voldoen. Daarnaast kunnen gebruikers ook zelf een beoordeling toevoegen via een formulier op de productpagina. Zo ontstaat er een interactieve en persoonlijke gebruikerservaring waarin men zijn mening kan delen met anderen. De beoordelingen worden visueel weergegeven met sterren, en zijn bedoeld om gebruikers te helpen bij hun aankoopbeslissingen.
 
+4. Gebruikerservaring:
+   - Volledig responsive design: de layout past zich automatisch aan verschillende schermformaten aan: desktop, tablet én mobiel. Hierdoor blijft de interface overzichtelijk en bruikbaar op elk toestel.
+   - Gebruiksvriendelijke navigatie: dankzij een duidelijke structuur en navigatie kunnen gebruikers vlot door de applicatie bladeren. Belangrijke onderdelen zoals de productlijst, winkelmandje en favorieten zijn gemakkelijk bereikbaar via knoppen of een navigatiebalk.
+   - Visueel aantrekkelijke lay-out: de applicatie maakt gebruik van een modern ontwerp met afgeronde hoeken, zachte schaduwen en consistente witruimtes. De stijl wordt versterkt door het gebruik van paarse knoppen.
+
 
 
 
