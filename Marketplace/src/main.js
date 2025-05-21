@@ -39,6 +39,7 @@ function renderProducts(products) {
       </div>
     `;
     productList.appendChild(card);
+    observer.observe(card);
   });
 
   initFavButtons();
@@ -163,6 +164,18 @@ showCartButton.addEventListener('click', () => {
   cartPage.classList.toggle('hidden');
   renderCart();
 });
+
+/* API observer instellen*/
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // klasse toevoegen als zichtbaar
+      observer.unobserve(entry.target); // stop observeren na 1x
+    }
+  });
+});
+
+
 
 
 
