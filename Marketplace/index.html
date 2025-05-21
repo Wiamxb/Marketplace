@@ -28,6 +28,31 @@
       <div id="cart-container"></div>
     </div>
 
+    <h2>Reviewformulier</h2>
+<form id="simple-review-form">
+  <label>Naam:</label><br />
+  <input type="text" name="name" required /><br />
+  
+  <label>Productnaam:</label><br />
+  <input type="text" name="product" required /><br />
+  
+  <label>Review:</label><br />
+  <textarea name="review" rows="3" required></textarea><br />
+  
+  <label>Beoordeling (1-5):</label><br />
+  <select name="rating" required>
+    <option value="">--Kies--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br /><br />
+  
+  <button type="submit">Verstuur review</button>
+</form>
+
+
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

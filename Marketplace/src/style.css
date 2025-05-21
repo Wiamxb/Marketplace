@@ -256,6 +256,76 @@ nav button:hover {
   transform: translateY(0);
 }
 
+/*formulier-css*/
+#simple-review-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+#simple-review-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#simple-review-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+#simple-review-form input[type="text"],
+#simple-review-form textarea,
+#simple-review-form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#simple-review-form input[type="text"]:focus,
+#simple-review-form textarea:focus,
+#simple-review-form select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+#simple-review-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+#simple-review-form button {
+  background-color: #9b59b6;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#simple-review-form button:hover {
+  background-color: #9b59b6;
+}
+
+#simple-review-form button:active {
+  background-color:#9b59b6;
+}
+
 
 /*Mobiele weergave*/
 @media (max-width: 768px) {

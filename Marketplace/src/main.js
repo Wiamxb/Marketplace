@@ -175,6 +175,24 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
+/*Review-formulier*/
+document.getElementById('simple-review-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const reviewData = {
+    name: formData.get('name'),
+    product: formData.get('product'),
+    review: formData.get('review'),
+    rating: formData.get('rating'),
+  };
+
+  console.log('Review ontvangen:', reviewData);
+  alert('Bedankt voor je review!');
+  this.reset();
+});
+
+
 
 
 
