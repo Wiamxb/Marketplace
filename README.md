@@ -28,8 +28,14 @@ Functionele vereisten:
 
 
    - Zoekfunctie: met de zoekbalk hebben gebruikers de mogelijkheid om specifiek producten te zoeken op basis van de titel. Tijdens het typproces worden de resultaten op een dynamische manier gefilterd, zodat alleen producten met de ingevoerde zoekterm zichtbaar zijn.
+  
+3. Personalisatie:
+   - Favorieten: gebruikers kunnen producten markeren als favoriet door op het hart-icoon te klikken. Deze favorieten worden opgeslagen in localStorage, zodat ze ook na het herladen van de pagina beschikbaar blijven. Er is een aparte knop voorzien om enkel de favorieten te bekijken.
+   - Winkelmandje: producten kunnen worden toegevoegd aan het winkelmandje. Gebruikers kunnen met een aparte knop het winkelmandoverzicht openen om hun geselecteerde aankopen te bekijken. Elke productkaart in het winkelmandje bevat een verwijderknop, waarmee gebruikers eenvoudig producten uit hun mandje kunnen verwijderen. Ook het winkelmandje blijft behouden tussen sessies dankzij localStorage.
+   - Beoordelingen: gebruikers kunnen bij elk product de beoordeling (rating) bekijken, zodat ze beter kunnen inschatten of het product aan hun verwachtingen zal voldoen. Daarnaast kunnen gebruikers ook zelf een beoordeling toevoegen via een formulier op de productpagina. Zo ontstaat er een interactieve en persoonlijke gebruikerservaring waarin men zijn mening kan delen met anderen. De beoordelingen worden visueel weergegeven met sterren, en zijn bedoeld om gebruikers te helpen bij hun aankoopbeslissingen.
 
-   - Favorieten en winkelmandje: naast de filter- en zoekfunctionaliteit is er ondersteuning voor personalisatie:
-     1. Favorieten: Gebruikers kunnen producten markeren als favoriet door op het hart-icoon te klikken. De favorieten worden opgeslagen zodat deze tussen sessies bewaard blijven en met een speciale knop kunnen worden getoond.
-     2. Winkelmandje: Gebruikers kunnen producten toevoegen aan hun winkelmandje. Met de winkelmandknop kunnen ze het overzicht opvragen van alle producten die ze willen kopen.
+
+
+
+
         
