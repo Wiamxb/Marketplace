@@ -46,6 +46,7 @@ https://dummyjson.com/docs/products
 
 Technische vereisten: 
 - DOM MANIPULATIE
+  
 | Vereiste                  | Bestand  | Regel(n) | Code                                                                                      |
 |---------------------------|----------|----------|-------------------------------------------------------------------------------------------|
 | Element selecteren        | main.js  | 6-9      | const productList = document.getElementById('product-list');<br>const searchInput = document.getElementById('search');<br>const showCartButton = document.getElementById('show-cart');<br>const cartContainer = document.getElementById('cart-container');<br> |
