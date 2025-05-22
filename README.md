@@ -26,8 +26,9 @@ Functionele vereisten:
      3. Meubels
      4. Boodschappen
 
-
    - Zoekfunctie: met de zoekbalk hebben gebruikers de mogelijkheid om specifiek producten te zoeken op basis van de titel. Tijdens het typproces worden de resultaten op een dynamische manier gefilterd, zodat alleen producten met de ingevoerde zoekterm zichtbaar zijn.
+  
+   - Soortermogelijkheden: In het winkelmandje zijn verwijderknoppen aanwezig zodat gebruikers ongewenste producten makkelijk kunnen verwijderen.
   
 3. Personalisatie:
    - Favorieten: gebruikers kunnen producten markeren als favoriet door op het hart-icoon te klikken. Deze favorieten worden opgeslagen in localStorage, zodat ze ook na het herladen van de pagina beschikbaar blijven. Er is een aparte knop voorzien om enkel de favorieten te bekijken.
@@ -78,6 +79,17 @@ Screenshots van de applicatie:
 - Review-formulier:
 
   ![image](https://github.com/user-attachments/assets/6e120c11-9d9a-4258-9a0a-05f788bfcd9e)
+
+Gebruikte bronnen: 
+- Als bron werd ChatGPT gebruikt:
+
+1. ![image](https://github.com/user-attachments/assets/9fa6d8ab-ecd8-4366-afd3-11695b30b6b7)
+
+2. ![image](https://github.com/user-attachments/assets/868eb79f-a3f3-4547-9c41-9f89c918cb69)
+
+3. ![image](https://github.com/user-attachments/assets/864411bf-ec68-46c9-b609-08be04fe1ec6)
+
+4. ![image](https://github.com/user-attachments/assets/f8d89fe5-d3f2-43b3-a8d2-4dbc3bb1466d)
 
 
 
