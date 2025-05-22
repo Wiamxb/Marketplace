@@ -45,6 +45,54 @@ Gebruikte API's:
 https://dummyjson.com/docs/products
 
 Technische vereisten: 
+- DOM MANIPULATIE
+| Vereiste                  | Bestand  | Regel(n) | Code                                                                                      |
+|---------------------------|----------|----------|-------------------------------------------------------------------------------------------|
+| Element selecteren        | main.js  | 6-9      | const productList = document.getElementById('product-list');<br>const searchInput = document.getElementById('search');<br>const showCartButton = document.getElementById('show-cart');<br>const cartContainer = document.getElementById('cart-container');<br> |
+| Elementen manipuleren     | main.js  | 20       | `productList.innerHTML = '';`                                                             |
+| Events aan elementen koppelen | main.js | 89       | `showCartButton.textContent = \`Winkelmandje (\${cart.length})\`;` |
+
+- MODERN JAVASCRIPT
+
+| Vereiste             | Bestand | Regel(len) | Codevoorbeeld                                      |
+|----------------------|---------|------------|---------------------------------------------------|
+| Gebruik van constanten| Main.js | 6          | `const productList = document.getElementById('product-list');` |
+| Template literals    | Main.js | 28         | `card.innerHTML = \`` (gebruik van backticks en `${}`) |
+| Iteratie over arrays | Main.js | 51-52      | `document.querySelectorAll('.fav-btn').forEach(btn => {` |
+| Array methods        | Main.js | 74         | `cart = cart.filter(item => item.id !== id);`     |
+| Arrow functions      | Main.js | 67-68      | `(btn => { btn.addEventListener('click', () => {` |
+| Conditional          | Main.js | 37         | `{isFav ? '❤️' : '🤍'}</button>`                   |
+| Callback             | Main.js | 68         | `btn.addEventListener('click', () => {`           |
+| Promises             | Main.js | 13         | `const res = await fetch('https://dummyjson.com/products');` |
+| Async & Await        | Main.js | 12-13      | `async function fetchProducts() { const res = await fetch(...); }` |
+| Observer API         | Main.js | 169        | `const observer = new IntersectionObserver(entries => {` |
+
+- DATA EN API: 
+
+| Vereiste                 | Bestand | Regel | Code                                              |
+|--------------------------|---------|-------|---------------------------------------------------|
+| Fetch om data op te halen | Main.js | 13    | `const res = await fetch('https://dummyjson.com/products');` |
+| JSON manipuleren en weergeven | Main.js | 14    | `const data = await res.json();`                   |
+
+- OPSLAG & VALIDATIE: 
+
+| Vereiste             | Bestand | Regel    | Code                                                                                  |
+|----------------------|---------|----------|---------------------------------------------------------------------------------------|
+| Formulier validatie  | Main.js | 179-180  | `document.getElementById('simple-review-form').addEventListener('submit', function(e) { e.preventDefault();` |
+| Gebruik van LocalStorage | Main.js | 3        | `let favourites = JSON.parse(localStorage.getItem('favourites')) || [];`               |
+
+- STYLING & LAYOUT: 
+
+| Vereiste                  | Bestand   | Regel | Code                              |
+|---------------------------|-----------|-------|----------------------------------|
+| Basis HTML layout         | Style.css | 2-10  | text-align: center;               |
+|                           |           |       | font-family: Arial, sans-serif;  |
+| Basis css                 | Style.css | overal | body                             |
+| Gebruiksvriendelijke elementen | Style.css | 41    | nav button:hover                  |
+
+- TOOLING & STRUCTUUR:
+  1. Het project is opgezet met vite
+  2. folderstructuur: index.html zit in de root => main.js en style.css zitten in de map "src". 
 
 Installatiehandleiding: 
 1. Via GitHub pages: de website is online beschikbaar via de volgende URL:
