@@ -43,6 +43,19 @@ Gebruikte API's:
 - DummyJSON API: Deze API werd gratis gevonden via GitHub. Een API met dummy data over producten. 
 https://dummyjson.com/docs/products
 
+Technische vereisten: 
+
+Installatiehandleiding: 
+1. Via GitHub pages: de website is online beschikbaar via de volgende URL:
+🔗 https://wiamxb.github.io/Marketplace/
+2. Lokaal via Visual Studio Code:
+   - Download of clone de repository
+   - Open de map in Visual Studio Code
+   - Open een terminal en voer "npm install" uit, en vervolgens "npm run dev"
+   - Je krijgt dan een lokale link waarmee je de site lokaal kunt bekijken
+
+
+
 
 
 
