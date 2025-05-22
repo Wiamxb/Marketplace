@@ -53,6 +53,36 @@ Installatiehandleiding:
    - Open de map in Visual Studio Code
    - Open een terminal en voer "npm install" uit, en vervolgens "npm run dev"
    - Je krijgt dan een lokale link waarmee je de site lokaal kunt bekijken
+  
+Screenshots van de applicatie: 
+- Basisoverzicht Homepage:
+  
+  ![image](https://github.com/user-attachments/assets/134639da-85b2-4e29-a746-8d46b8f0cb4e)
+  
+- Categoriëen => voorbeeld categorie meubels
+
+  ![image](https://github.com/user-attachments/assets/f28bd8a0-a277-4dc7-b28f-81460340a91a)
+
+- Favorieten:
+
+  ![image](https://github.com/user-attachments/assets/7253c85b-b3b5-4008-aa31-f314d65222c1)
+
+- Winkelmandje:
+  
+  ![image](https://github.com/user-attachments/assets/986a5ba4-6bbd-4942-a699-97d971805099)
+
+- Zoekfunctie:
+  
+  ![image](https://github.com/user-attachments/assets/048ef36c-573b-4a9d-a428-ce704a7dacad)
+
+- Review-formulier:
+
+  ![image](https://github.com/user-attachments/assets/6e120c11-9d9a-4258-9a0a-05f788bfcd9e)
+
+
+
+
+
 
 
 
