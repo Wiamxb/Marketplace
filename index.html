@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marketplace</title>
+    <script type="module" crossorigin src="/Marketplace/assets/index-CgA0hKrc.js"></script>
+    <link rel="stylesheet" crossorigin href="/Marketplace/assets/index-Bw-kxVNn.css">
+  </head>
+  <body>
+    <nav>
+      <button class="filter-button" data-filter="all">Alles</button>
+      <button class="filter-button" data-filter="beauty">Schoonheid</button>
+      <button class="filter-button" data-filter="fragrances">Parfums</button>
+      <button class="filter-button" data-filter="furniture">Meubels</button>
+      <button class="filter-button" data-filter="groceries">Boodschappen</button>
+      <button id="show-favorites">Favorieten (<span id="favorites-count">0</span>)</button>
+      <button id="show-cart">Winkelmandje (0)</button>
+    </nav> 
+    <div id="product-container"></div>
+    <h1>🛒 Marketplace</h1>
+
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Zoek producten..." />
+    </div>
+
+    <div id="product-list"></div>
+    <div id="cart-page" class="hidden">
+      <h2>🧺 Je winkelmandje</h2>
+      <div id="cart-container"></div>
+    </div>
+
+    <h2>Reviewformulier</h2>
+<form id="simple-review-form">
+  <label>Naam:</label><br />
+  <input type="text" name="name" required /><br />
+  
+  <label>Productnaam:</label><br />
+  <input type="text" name="product" required /><br />
+  
+  <label>Review:</label><br />
+  <textarea name="review" rows="3" required></textarea><br />
+  
+  <label>Beoordeling (1-5):</label><br />
+  <select name="rating" required>
+    <option value="">--Kies--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br /><br />
+  
+  <button type="submit">Verstuur review</button>
+</form>
+
+
+  </body>
+</html>
+

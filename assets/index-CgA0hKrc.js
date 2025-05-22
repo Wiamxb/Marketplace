@@ -1,0 +1,20 @@
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const a of n)if(a.type==="childList")for(const l of a.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&i(l)}).observe(document,{childList:!0,subtree:!0});function r(n){const a={};return n.integrity&&(a.integrity=n.integrity),n.referrerPolicy&&(a.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?a.credentials="include":n.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(n){if(n.ep)return;n.ep=!0;const a=r(n);fetch(n.href,a)}})();let s=[],c=JSON.parse(localStorage.getItem("favourites"))||[],o=JSON.parse(localStorage.getItem("cart"))||[];const m=document.getElementById("product-list"),y=document.getElementById("search"),g=document.getElementById("show-cart"),u=document.getElementById("cart-container");async function E(){return(await(await fetch("https://dummyjson.com/products")).json()).products}function d(t){m.innerHTML="",t.forEach(e=>{const r=c.includes(e.id),i=o.some(a=>a.id===e.id),n=document.createElement("div");n.classList.add("product-card"),n.innerHTML=`
+      <img src="${e.thumbnail}" alt="${e.title}" />
+      <h3>${e.title}</h3>
+      <p>${e.description}</p>
+      <p>💰 ${e.price} €</p>
+       <p>⭐ ${e.rating}</p>
+       <p>Merk: ${e.brand}</p>
+      <p>${e.category}</p>
+      <div class="product-actions">
+        <button class="fav-btn" data-id="${e.id}">${r?"❤️":"🤍"}</button>
+        <button class="cart-btn" data-id="${e.id}">${i?"In winkelmand":"🛒 Voeg toe aan winkelmand"}</button>
+      </div>
+    `,m.appendChild(n),h.observe(n)}),L(),b()}function L(){document.querySelectorAll(".fav-btn").forEach(t=>{t.addEventListener("click",()=>{const e=parseInt(t.dataset.id);c.includes(e)?c=c.filter(r=>r!==e):c.push(e),localStorage.setItem("favourites",JSON.stringify(c)),p(),d(s)})})}function b(){document.querySelectorAll(".cart-btn").forEach(t=>{t.addEventListener("click",()=>{const e=parseInt(t.dataset.id),r=s.find(i=>i.id===e);o.some(i=>i.id===e)?o=o.filter(i=>i.id!==e):o.push(r),localStorage.setItem("cart",JSON.stringify(o)),f(),d(s)})})}function p(){document.getElementById("favorites-count").textContent=c.length}function f(){g.textContent=`Winkelmandje (${o.length})`}function v(){if(u.innerHTML="",o.length===0){u.innerHTML="<p>Je winkelmand is leeg.</p>";return}o.forEach(t=>{const e=document.createElement("div");e.classList.add("cart-item"),e.innerHTML=`
+      <img src="${t.thumbnail}" alt="${t.title}" />
+      <div class="cart-item-details">
+        <h3>${t.title}</h3>
+        <p>💰 ${t.price} €</p>
+      </div>
+      <button class="remove-cart-btn" data-id="${t.id}">✖</button>
+    `,u.appendChild(e)}),document.querySelectorAll(".remove-cart-btn").forEach(t=>{t.addEventListener("click",()=>{const e=parseInt(t.dataset.id);o=o.filter(r=>r.id!==e),localStorage.setItem("cart",JSON.stringify(o)),v(),f(),d(s)})})}async function I(){s=await E(),d(s),f(),p()}I();y.addEventListener("input",t=>{const e=t.target.value.toLowerCase(),r=s.filter(i=>i.title.toLowerCase().includes(e));d(r)});document.querySelectorAll(".filter-button").forEach(t=>{t.addEventListener("click",()=>{const e=t.dataset.filter,r=e==="all"?s:s.filter(i=>i.category===e);d(r)})});document.getElementById("show-favorites").addEventListener("click",()=>{const t=s.filter(e=>c.includes(e.id));d(t)});g.addEventListener("click",()=>{document.getElementById("cart-page").classList.toggle("hidden"),v()});const h=new IntersectionObserver(t=>{t.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),h.unobserve(e.target))})});document.getElementById("simple-review-form").addEventListener("submit",function(t){t.preventDefault();const e=new FormData(this),r={name:e.get("name"),product:e.get("product"),review:e.get("review"),rating:e.get("rating")};console.log("Review ontvangen:",r),alert("Bedankt voor je review!"),this.reset()});
