@@ -47,7 +47,7 @@ https://dummyjson.com/docs/products
 Technische vereisten: 
 - DOM MANIPULATIE
   
-| Vereiste                  | Bestand  | Regel(n) | Code                                                                                      |
+| Vereiste                  | Bestand  | Regel | Code                                                                                      |
 |---------------------------|----------|----------|-------------------------------------------------------------------------------------------|
 | Element selecteren        | main.js  | 6-9      | const productList = document.getElementById('product-list');<br>const searchInput = document.getElementById('search');<br>const showCartButton = document.getElementById('show-cart');<br>const cartContainer = document.getElementById('cart-container');<br> |
 | Elementen manipuleren     | main.js  | 20       | `productList.innerHTML = '';`                                                             |
@@ -55,7 +55,7 @@ Technische vereisten:
 
 - MODERN JAVASCRIPT
 
-| Vereiste             | Bestand | Regel(len) | Codevoorbeeld                                      |
+| Vereiste             | Bestand | Regel | Code                                  |
 |----------------------|---------|------------|---------------------------------------------------|
 | Gebruik van constanten| Main.js | 6          | `const productList = document.getElementById('product-list');` |
 | Template literals    | Main.js | 28         | `card.innerHTML = \`` (gebruik van backticks en `${}`) |
@@ -86,8 +86,7 @@ Technische vereisten:
 
 | Vereiste                  | Bestand   | Regel | Code                              |
 |---------------------------|-----------|-------|----------------------------------|
-| Basis HTML layout         | Style.css | 2-10  | text-align: center;               |
-|                           |           |       | font-family: Arial, sans-serif;  |
+| Basis HTML layout         | Style.css | 2-10  | text-align: center;  font-family: Arial, sans-serif             |
 | Basis css                 | Style.css | overal | body                             |
 | Gebruiksvriendelijke elementen | Style.css | 41    | nav button:hover                  |
 
